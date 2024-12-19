@@ -97,9 +97,9 @@ export const menulists = [
       description:
         "Enhance your home decor with our Wooden Single Drawer. Crafted with precision and designed for functionality, this drawer provides ample storage space while adding a touch of elegance to any room. The rich wooden finish complements a variety of interior styles, making it a versatile addition to your home. The discount of 10% makes it an affordable choice, and with a rating of 2.5, it's a reliable and stylish furniture piece. Featured as a top pick, this drawer is a must-have for those who appreciate quality craftsmanship.",
       images: [
-        { image: "../images/product/product1.png" },
-        { image: "../images/product/product1.3.png" },
-        { image: "../images/product/product1.2.png" },
+        { image: "./images/product/product1.png" },
+        { image: "./images/product/product1.3.png" },
+        { image: "./images/product/product1.2.png" },
       ],
       discount: 10,
       rating: 2.5,
