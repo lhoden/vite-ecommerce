@@ -4,8 +4,9 @@ import { useRef, useState, useEffect } from 'react'
 import { menulists } from '../../assets/data/data.js'
 import { CustomNavLink, CustomLink, Badges } from './CustomComponents.jsx'
 import './Header.css'
-import { IoSearchOutline, IoHeartOutline, IoCartOutline } from 'react-icons/io5'
+import { IoSearchOutline } from 'react-icons/io5'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { ModelCart } from '../cart/ModelCart.jsx'
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -67,18 +68,7 @@ export const Header = () => {
                         </div>
                         <div className={`${isScrolled || isHomePage ? "text-white" : "text-primary"} icon flex items-center justify-center gap-6`}>
                             <IoSearchOutline size={23} />
-                            <div className="relative z-20">
-                                <IoHeartOutline size={23} />
-                                <div className="absolute -top-2 -right-1.5">
-                                    <Badges color="bg-primary-green">0</Badges>
-                                </div>
-                            </div>
-                            <div className="relative z-20">
-                                <IoCartOutline size={23} />
-                                <div className="absolute -top-2 -right-1.5">
-                                    <Badges color="bg-primary-green">0</Badges>
-                                </div>
-                            </div>
+                            <ModelCart />
                             <button onClick={toggleMenu} className="lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none">
                                 {isOpen ? (
                                   <AiOutlineClose size={24} />  

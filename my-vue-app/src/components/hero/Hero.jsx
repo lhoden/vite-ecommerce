@@ -132,8 +132,8 @@ const Banner = () => {
                     <BannerCard title="Wooden Water Bottles" desc="UP TO 60% OFF" cover="./images/hero/product1-1.png" />
                 </div>
                 <div className="flex justify-between flex-col gap-8">
-                    <BannerCard title="Wooden Water Bottles" desc="UP TO 60% OFF" cover="./images/hero/product2.png" className={true} />
-                    <BannerCard title="Wooden Water Bottles" desc="UP TO 60% OFF" cover="./images/hero/product3.png" className={true} classSecond={true} />
+                    <BannerCard title="Toothbrushes I guess" desc="UP TO 60% OFF" cover="./images/hero/product2.png" className={true} />
+                    <BannerCard title="Oh yeah we got bags" desc="UP TO 60% OFF" cover="./images/hero/product3.png" className={true} classSecond={true} />
                 </div>
             </div>
         </>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Layout, Home } from "./router";
+import { Layout, Home, Shop, ProductDetails } from "./router";
 
 export const App = () => {
     return (
@@ -12,6 +12,26 @@ export const App = () => {
                         element = {
                             <Layout>
                                 <Home/>
+                            </Layout>
+                        }
+                    />
+                </Routes>
+                <Routes>
+                    <Route
+                        path="/shop"
+                        element = {
+                            <Layout>
+                                <Shop/>
+                            </Layout>
+                        }
+                    />
+                </Routes>
+                <Routes>
+                    <Route
+                        path="/product-details/:productId"
+                        element = {
+                            <Layout>
+                                <ProductDetails />
                             </Layout>
                         }
                     />

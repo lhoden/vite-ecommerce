@@ -6,7 +6,9 @@ import { AiFillInstagram } from 'react-icons/ai';
 import { BodyOne, Title } from '../common/CustomComponents';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 // import { FaFacebookF, AiFillInstagram, FaTwitter } from '@fortawesome/free-solid-svg-icons';
+import { CartActions } from '../../redux/slice/cartSlice';
 
 export const RenderRatingStars = (rating) => {
     const totalStars = 5;
@@ -28,12 +30,17 @@ export const RenderRatingStars = (rating) => {
 
 export const ProductCard = ({ id, title, description, images, price, discount, rating, featured, category, color }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const dispatch = useDispatch();
     const openModal = () => {
         setIsModalOpen(true);
     };
     const closeModal = () => {
         setIsModalOpen(false);
     };
+    const discountPrice = price[0].value - (price[0].value * discount) / 100;
+    const addToCart = () => {
+        dispatch(CartActions.addToCart({id,title,price:discountPrice,images}));
+    }
     return (
         <>
             <div className="product card">
@@ -51,7 +58,9 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
                         <button onClick={openModal} className="quick-view-btn product-btn primary-btn">
                             Quick View
                         </button>
-                        <button className="add-to-cart-btn product-btn primary-btn">
+                        <button 
+                            onClick={addToCart}
+                            className="add-to-cart-btn product-btn primary-btn">
                             <IoCart size={23} />
                         </button>
                         <button className="love-btn product-btn primary-btn">
