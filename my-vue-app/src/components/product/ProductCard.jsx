@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 // import { FaFacebookF, AiFillInstagram, FaTwitter } from '@fortawesome/free-solid-svg-icons';
 import { CartActions } from '../../redux/slice/cartSlice';
+import { FavoriteActions } from '../../redux/slice/favouriteSlice';
 
 export const RenderRatingStars = (rating) => {
     const totalStars = 5;
@@ -41,6 +42,9 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
     const addToCart = () => {
         dispatch(CartActions.addToCart({id,title,price:discountPrice,images}));
     }
+    const addToFavorites = () => {
+        dispatch(FavoriteActions.addToFavorites({id,title,price:discountPrice,images}));
+    }
     return (
         <>
             <div className="product card">
@@ -63,7 +67,7 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
                             className="add-to-cart-btn product-btn primary-btn">
                             <IoCart size={23} />
                         </button>
-                        <button className="love-btn product-btn primary-btn">
+                        <button onClick={addToFavorites} className="love-btn product-btn primary-btn">
                             <IoMdHeart size={23} />
                         </button>
                     </div>

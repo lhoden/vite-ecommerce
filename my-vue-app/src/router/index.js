@@ -9,3 +9,4 @@ export { ShippingInfo } from "../components/product/ShippingInfo";
 export { Banner } from "../components/product/Banner";
 export { InstagramPost } from "../components/hero/InstagramPost";
 export { ProductDetails } from "../screen/product/ProductDetails";
+export { CartPage } from "../screen/CartPage";
