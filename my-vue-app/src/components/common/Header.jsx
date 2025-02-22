@@ -1,4 +1,4 @@
-import LogoImg from '../../assets/common/logo.png'
+import LogoImg from '../../assets/common/camera-logo.png'
 import React from 'react'
 import { useRef, useState, useEffect } from 'react'
 import { menulists } from '../../assets/data/data.js'
@@ -49,8 +49,9 @@ export const Header = () => {
                 )}
                 <nav className="p-4 flex justify-between items-center relative">
                     <div className="flex items-center gap-14">
-                        <div>
-                            <img src={LogoImg} alt="LogoImg" className="h-7" />
+                        <div style={{display: 'flex', marginBottom: '-1em'}}>
+                            <img src={LogoImg} alt="LogoImg" className="h-12" />
+                            <h3 style={{marginTop: '1em', marginLeft: '0.5em', fontWeight: 'bold'}}>CameraShop</h3>
                         </div>
                         <div className="hidden lg:flex items-center justify-between gap-8">
                             {menulists.map((list) => (

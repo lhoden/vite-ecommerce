@@ -34,10 +34,10 @@ export const menulists = [
   export const herolist = [
     {
       id: 1,
-      title: "Natural Wooden Products",
+      title: "For the Occasion",
       description:
-        "Sell globally in minutes with localized currencies, languages, and experiences in every market.",
-      image: "../images/hero/h1.png",
+        "When every moment matters.",
+      image: "../images/hero/instax.png",
       price: [
         {
           color: "red",
@@ -62,10 +62,10 @@ export const menulists = [
     },
     {
       id: 2,
-      title: "Explore Wooden Products",
+      title: "Explore 4K Cameras",
       description:
-        "Sell globally in minutes with localized currencies, languages, and experiences in every market.",
-      image: "../images/hero/h2.png",
+        "Preview the visual as it's ",
+      image: "../images/hero/4k-cam.jpg",
       price: [
         {
           color: "red",
@@ -93,13 +93,13 @@ export const menulists = [
   export const productlists = [
     {
       id: 1,
-      title: "Wooden single drawer",
+      title: "Canon EOS R5",
       description:
-        "Enhance your home decor with our Wooden Single Drawer. Crafted with precision and designed for functionality, this drawer provides ample storage space while adding a touch of elegance to any room. The rich wooden finish complements a variety of interior styles, making it a versatile addition to your home. The discount of 10% makes it an affordable choice, and with a rating of 2.5, it's a reliable and stylish furniture piece. Featured as a top pick, this drawer is a must-have for those who appreciate quality craftsmanship.",
+        "The EOS R5 is a hugely versatile camera which works well in a range of scenarios, from landscape photography through to event, portrait, action, and wildlife photography. It's also an incredibly capable video camera.",
       images: [
-        { image: "../images/product/product1.png" },
-        { image: "../images/product/product1.3.png" },
-        { image: "../images/product/product1.2.png" },
+        { image: "../images/product/yay1.png" },
+        { image: "../images/product/yay4.png" },
+        { image: "../images/product/yay8.png" },
       ],
       discount: 10,
       rating: 2.5,
@@ -113,13 +113,13 @@ export const menulists = [
     },
     {
       id: 2,
-      title: "Wooden Serving Bowl",
+      title: "Leica M6",
       description:
-        "Elevate your dining experience with our exquisite Wooden Serving Bowl. Carved from high-quality wood, this bowl brings a touch of nature to your table. Its deep design is perfect for serving salads, fruits, or your favorite dishes. The 15% discount makes it an excellent deal, and with a rating of 4.2, it combines style and functionality seamlessly. Although not featured, this bowl stands out as a practical and beautiful addition to your kitchen.",
+        "The legendary Leica M6 is an icon. Intuitive, compact, and discreet, it allows you to get up close to the action – and to real emotions. Since 1984, it has been the camera of choice for many of the world's best photographers, who have used it to create countless iconic images.",
       images: [
-        { image: "../images/product/product2.png" },
-        { image: "../images/product/product1.3.png" },
-        { image: "../images/product/product1.2.png" },
+        { image: "../images/product/yay2.png" },
+        { image: "../images/product/yay4.png" },
+        { image: "../images/product/yay8.png" },
       ],
       discount: 15,
       rating: 4.2,
@@ -133,12 +133,12 @@ export const menulists = [
     },
     {
       id: 3,
-      title: "Wooden Glass",
+      title: "Nikon Z fc",
       description:
-        "Sip in style with our Wooden Glass collection. Crafted with precision, these wooden glasses add a natural touch to your beverage experience. The set includes glasses in various colors to suit your mood. With a 12% discount, these glasses offer both aesthetics and affordability. Rated at 4.5, these glasses are perfect for daily use or special occasions, making them a versatile addition to your glassware collection.",
+        "The Z fc mirrorless camera features a classic, tactile design fused with modern Z series technology. Equipped with a flip out vlogger screen, this DX-format 4K UHD compact camera delivers big image quality for photos and videos. ",
       images: [
-        { image: "../images/product/product3.png" },
-        { image: "../images/product/product1.2.png" },
+        { image: "../images/product/yay3.png" },
+        { image: "../images/product/yay8.png" },
         { image: "../images/product/product1.1.png" },
       ],
       discount: 12,
@@ -153,13 +153,13 @@ export const menulists = [
     },
     {
       id: 4,
-      title: "Wooden Cup",
+      title: "Instax Mini 12",
       description:
-        "Experience the warmth of wooden craftsmanship with our Wooden Cup collection. Each cup is meticulously crafted to bring a rustic charm to your kitchen. The 18% discount makes it an excellent value, and with a high rating of 4.8, these cups are a favorite among those who appreciate quality. Not featured, but certainly not to be overlooked, these wooden cups are perfect for enjoying your favorite beverages.",
+        "The super bubbly Fujifilm INSTAX MINI 12 instant camera is bursting with joy, creativity and color. Not only is this instant camera available in six super-cute and appealing tones – Pastel Blue, Mint Green, Blossom Pink, Lilac Purple, Clay White and Stormy Weather – it’s also fully loaded with easy-to-use modes and controls.",
       images: [
-        { image: "../images/product/product4.png" },
-        { image: "../images/product/product1.1.png" },
-        { image: "../images/product/product1.2.png" },
+        { image: "../images/product/yay4.png" },
+        { image: "../images/product/yay3.png" },
+        { image: "../images/product/yay8.png" },
       ],
       discount: 18,
       rating: 4.8,
@@ -177,13 +177,13 @@ export const menulists = [
     },
     {
       id: 5,
-      title: "Wooden Coffee Mug",
+      title: "Minolta MND30",
       description:
-        "Start your day with the charm of our Wooden Coffee Mugs. Crafted with care, these mugs bring a touch of nature to your morning routine. The 15% discount ensures affordability without compromising on style. With a rating of 4.0, these mugs are not just functional but also visually appealing. While not featured, they are a delightful addition to any coffee lover's collection.",
+        "The Minolta MND30 is a simple and fun camera capable of producing high-resolution images and ultra clear 2.7K QHD video even in a compact package. This convenient and compact device can cover a variety of shooting situations with its crystal clear lens and 4x digital zoom.",
       images: [
-        { image: "../images/product/product5.png" },
-        { image: "../images/product/product1.3.png" },
-        { image: "../images/product/product1.2.png" },
+        { image: "../images/product/yay5.png" },
+        { image: "../images/product/yay4.png" },
+        { image: "../images/product/yay8.png" },
       ],
       discount: 15,
       rating: 4.0,
@@ -197,13 +197,13 @@ export const menulists = [
     },
     {
       id: 6,
-      title: "Wooden Brush",
+      title: "OM System OM-5",
       description:
-        "Upgrade your grooming routine with our Wooden Brush collection. Made with high-quality materials, these brushes offer a natural and comfortable grooming experience. The 20% discount makes them a great value, and with a rating of 4.2, they are a reliable choice for your daily routine. Although not featured, these wooden brushes stand out for their durability and eco-friendly design.",
+        "The OM-5 is not here to be flashy, steal the show, be in the way of your experience or even try to be the sole reason for your adventure. It is rather like your favourite pair of boots that lead you onto trails unknown; that bag that always has what you need, or that friend that helps you see the world in a beautifully different way.",
       images: [
-        { image: "../images/product/product6.png" },
-        { image: "../images/product/product1.2.png" },
-        { image: "../images/product/product1.1.png" },
+        { image: "../images/product/yay6.png" },
+        { image: "../images/product/yay8.png" },
+        { image: "../images/product/yay3.png" },
       ],
       discount: 20,
       rating: 4.2,
@@ -217,13 +217,13 @@ export const menulists = [
     },
     {
       id: 7,
-      title: "Wooden Bottles",
+      title: "Nikon D5600",
       description:
-        "Elevate your hydration experience with our Wooden Bottles. Crafted with precision and designed for durability, these bottles are an eco-friendly choice for your daily water intake. The 15% discount makes them an affordable and sustainable option. With a rating of 3.5, these bottles are a practical and stylish addition to your daily routine.",
+        "Nikon's Expeed image processor combined with an outstanding autofocus system and the ability to shoot at ISO 25,600, and an expanded ISO sensitivity of 6,400 in Night Landscape mode, ensures low-light scenes and difficult lighting situations are handled with ease making the D5600 a low-light powerhouse.",
       images: [
-        { image: "../images/product/product7.png" },
-        { image: "../images/product/product1.3.png" },
-        { image: "../images/product/product1.1.png" },
+        { image: "../images/product/yay7.png" },
+        { image: "../images/product/yay4.png" },
+        { image: "../images/product/yay3.png" },
       ],
       discount: 15,
       rating: 3.5,
@@ -237,15 +237,15 @@ export const menulists = [
     },
     {
       id: 8,
-      title: "Luxury Couch",
+      title: "Super EBC Lens",
       description:
-        "Indulge in luxury with our Elegant and Comfortable Wooden Couch. Crafted with meticulous attention to detail, this couch adds a touch of sophistication to your living room. The 25% discount makes it a premium choice without compromising on quality. With an impressive rating of 4.8, this couch is a featured product for those who seek both style and comfort.",
+        "Super Electron Beam Coating (Super EBC) is Fujifilm's proprietary multi-layer lens coating. It is designed to minimize flare and ghosting for maximum light transmission and image quality.",
       images: [
         {
-          image: "../images/product/product8.png",
+          image: "../images/product/yay8.png",
         },
-        { image: "../images/product/product1.2.png" },
-        { image: "../images/product/product1.3.png" },
+        { image: "../images/product/yay1.png" },
+        { image: "../images/product/yay4.png" },
       ],
       discount: 25,
       rating: 4.8,
@@ -287,59 +287,59 @@ export const menulists = [
   export const promotionalInfo = [
     {
       id: 1,
-      title: "Free Shipping On All Orders Over $59",
+      title: "Poloroid",
       description:
         "Shop & shipment across the whole North America. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
-      image: "../images/promotional/prom1.png",
+      image: "../images/promotional/promcamera1.png",
     },
     {
       id: 2,
-      title: "From $29.05",
+      title: "Security Camera",
       description:
         "Organic Skincare for Glowing Complexion. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
-      image: "../images/promotional/prom2.png",
+      image: "../images/promotional/promcamera2.png",
     },
   ];
   
   export const instagramPosts = [
     {
       id: 1,
-      image: "../images/posts/post1.png",
+      image: "../images/posts/yeah1.jpg",
       caption: "Caption for post 1",
       likes: 150,
       comments: 25,
     },
     {
       id: 2,
-      image: "../images/posts/post2.png",
+      image: "../images/posts/yeah2.jpg",
       caption: "Caption for post 2",
       likes: 200,
       comments: 30,
     },
     {
       id: 3,
-      image: "../images/posts/post3.png",
+      image: "../images/posts/yeah3.jpg",
       caption: "Caption for post 3",
       likes: 180,
       comments: 20,
     },
     {
       id: 4,
-      image: "../images/posts/post4.png",
+      image: "../images/posts/yeah4.jpg",
       caption: "Caption for post 4",
       likes: 250,
       comments: 40,
     },
     {
       id: 5,
-      image: "../images/posts/post5.png",
+      image: "../images/posts/yeah5.jpg",
       caption: "Caption for post 5",
       likes: 300,
       comments: 35,
     },
     {
       id: 6,
-      image: "../images/posts/post6.png",
+      image: "../images/posts/yeah6.jpg",
       caption: "Caption for post 6",
       likes: 190,
       comments: 15,

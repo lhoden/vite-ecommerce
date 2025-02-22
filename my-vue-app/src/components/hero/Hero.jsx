@@ -129,11 +129,11 @@ const Banner = () => {
             <div className="py-20 container flex flex-col lg:flex-row items-center gap-5">
                 {/* TODO: make sure that this is user input optimized and not hardcoded after full implementation */}
                 <div>
-                    <BannerCard title="Wooden Water Bottles" desc="UP TO 60% OFF" cover="./images/hero/product1-1.png" />
+                    <BannerCard title="Advanced" desc="UP TO 60% OFF" cover="./images/hero/camera1-1.png" />
                 </div>
                 <div className="flex justify-between flex-col gap-8">
-                    <BannerCard title="Toothbrushes I guess" desc="UP TO 60% OFF" cover="./images/hero/product2.png" className={true} />
-                    <BannerCard title="Oh yeah we got bags" desc="UP TO 60% OFF" cover="./images/hero/product3.png" className={true} classSecond={true} />
+                    <BannerCard title="Lenses" desc="UP TO 60% OFF" cover="./images/hero/camera2.png" className={true} />
+                    <BannerCard title="EOS Camera" desc="UP TO 60% OFF" cover="./images/hero/camera3.png" className={true} classSecond={true} />
                 </div>
             </div>
         </>

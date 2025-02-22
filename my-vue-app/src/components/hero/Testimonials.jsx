@@ -51,9 +51,9 @@ export const Testimonials = () => {
                         <div className="box w-96 h-96 bg-white rounded-full z-50">
                             {/* TODO: make this dynamic and import from data so the user can choose this as well */}
                             <img 
-                                src="../images/hero/girl.png" 
+                                src="../images/hero/mintCamera.png" 
                                 alt=""
-                                className="absolute -top-[130px] left-0 z-10 rounded-b-full"
+                                className="absolute -top-[48px] left-0 z-10 rounded-b-full"
                             />
                         </div>
                         <div className="bg-[rgba(255,255,255,0.5)] px-5 backdrop-blur-sm p-3 rounded-lg absolute top-36 right-60 z-50">

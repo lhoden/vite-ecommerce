@@ -170,31 +170,29 @@ export const ProductDetails = () => {
                 </div>
                 <div className="flex justify-between flex-col lg:flex-row my-10">
                     <div className="lg:w-1/2">
-                        <Title level={3}>Wooden Chairs</Title>
+                        <Title level={3}>Cameras</Title>
+                        <br/>
                         <Caption>
-                            The most common hardwoods used to construct chairs are ash, beech, birch, cherry, mahogany, maple, oak, pecan, poplar, teak, and walnut. 
-                            The most common softwoods used to construct furniture are cedar, pine, and redwood. Characteristics of these woods are the following: Ash.
+                        While phone cameras are convenient, dedicated cameras are generally preferred for superior image quality, more manual controls, better lens options, and a more ergonomic design, especially when taking professional or detailed photographs in challenging lighting conditions or situations requiring specific focal lengths; essentially, a camera offers greater creative flexibility compared to a phone camera. 
                         </Caption>
                         <br/>
                         <Title level={3}>Specifications</Title>
-                        <Caption>Assembled Dimensions (L x W x H): 21.5" x 19" x 27"</Caption>
-                        <Caption>Assembled Product Weight: 25 lbs. </Caption>
-                        <Caption>Assembled Dimensions (L x W x H): 21.5" x 19" x 27"</Caption>
-                        <Caption>Assembled Product Weight: 25 lbs. </Caption>
-                        <Caption>Assembled Dimensions (L x W x H): 21.5" x 19" x 27"</Caption>
-                        <Caption>Assembled Product Weight: 25 lbs. </Caption>
-                        <Caption>Assembled Dimensions (L x W x H): 21.5" x 19" x 27"</Caption>
-                        <Caption>Assembled Product Weight: 25 lbs. </Caption>
-                        <Caption>Assembled Dimensions (L x W x H): 21.5" x 19" x 27"</Caption>
-                        <Caption>Assembled Product Weight: 25 lbs. </Caption>
-                        <Caption>Assembled Dimensions (L x W x H): 21.5" x 19" x 27"</Caption>
-                        <Caption>Assembled Product Weight: 25 lbs. </Caption>
+                        <br/>
+                        <Caption>High Image Quality: Canon EOS R5 8K digital camera features a stacked, back-side illuminated 45-megapixel full-frame CMOS sensor for phenomenal low-light performance, image clarity and level of detail</Caption>
+                        <br/>
+                        <Caption>Powerful Image Processor: DIGIC X image processor with an ISO range of 100-51200; expandable to 102400x; powers 8K capture, enhances detail, reduces noise and more with high speed and efficiency</Caption>
+                        <br/>
+                        <Caption>High-Speed Shooting: High-speed continuous shooting of up to 12 fps with mechanical shutter and up to 20 fps using electronic (silent) shutter — a large step-up in our EOS R-series line of mirrorless cameras</Caption>
+                        <br/>
+                        <Caption>Superb Autofocus: Dual pixel CMOS AF with 1,053 AF points; covers approximately 100% area; subject tracking of people, animals and vehicles using deep learning technology; features Eye Control AF capability to enable photographers to select focus points simply by looking at them</Caption>
+                        <br/>
+                        <Caption>High-Resolution Video Capture: 8K RAW, 4K up to 120fps Internal Recording in all Formats, with Auto Focus — stellar 8K camera for video recording</Caption>
                     </div>
                     <div className="lg:w-1/2 grid grid-cols-2 gap-5 lg:px-8 mt-5">
-                        <ProductDetailsBox title="Wood Source" desc="We source our wood straight from trees - that's right, plain and simple." />
-                        <ProductDetailsBox title="Staining Wood" desc="So in case you didn't know this, we stain wood with wood stain." />
-                        <ProductDetailsBox title="Craftsmanship" desc="There are people who are trained to build these things. It's pretty cool." />
-                        <ProductDetailsBox title="You get the jist" desc="Do you really need to know any more than that?" />
+                        <ProductDetailsBox title="Camera Types" desc="There are so many different camera types to choose from based on your preference and use case." />
+                        <ProductDetailsBox title="Lenses" desc="Camera lenses are huge in enhancing the capability of your device." />
+                        <ProductDetailsBox title="Lighting" desc="Lighting can make a major difference in your results. Choose from a variety of indoor and outdoor lights." />
+                        <ProductDetailsBox title="Memory Cards" desc="Choose a memory card with the capacity to handle your projects." />
                     </div>
                 </div>
                 <Title level={3} className="my-5">
