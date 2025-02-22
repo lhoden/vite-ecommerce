@@ -141,12 +141,12 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
                                     <div className="flex flex-col gap-4">
                                         <div className="flex items-center gap-3">
                                             <Title level={5} className="text-lg">
-                                                Category : <span className="font-normal">Wooden Product</span>
+                                                Category : <span className="font-normal">Main</span>
                                             </Title>
                                         </div>
                                         <div className="flex items-center gap-3">
                                             <Title level={5} className="text-lg">
-                                                Tag : <span className="font-normal">Wooden</span>
+                                                Tag : <span className="font-normal">Camera</span>
                                             </Title>
                                         </div>
                                         <div className="flex items-center gap-3">
