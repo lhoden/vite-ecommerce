@@ -28,6 +28,7 @@ export const Product = () => {
                                 featured={product.featured}
                                 category={product.category}
                                 color={product.color}
+                                enableQuickView={true}
                             />   
                         ))}
                     </div>

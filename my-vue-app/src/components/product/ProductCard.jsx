@@ -29,7 +29,7 @@ export const RenderRatingStars = (rating) => {
     return stars;
 }
 
-export const ProductCard = ({ id, title, description, images, price, discount, rating, featured, category, color }) => {
+export const ProductCard = ({ id, title, description, images, price, discount, rating, featured, category, color, enableQuickView }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const dispatch = useDispatch();
     const openModal = () => {
@@ -59,7 +59,7 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
                         )}
                     </div>
                     <div className="overlay flex items-center gap-2 justify-center absolute bottom-0 left-0 right-0 m-5">
-                        <button onClick={openModal} className="quick-view-btn product-btn primary-btn">
+                        <button style={enableQuickView ? {display: 'flex'} : {display: 'none'}} onClick={openModal} className="quick-view-btn product-btn primary-btn">
                             Quick View
                         </button>
                         <button 

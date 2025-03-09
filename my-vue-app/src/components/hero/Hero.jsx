@@ -126,7 +126,7 @@ export const HeroItem = ({ title, description, prices, colors, image }) => {
 const Banner = () => {
     return (
         <>
-            <div className="py-20 container flex flex-col lg:flex-row items-center gap-5">
+            <div className="py-20 container flex flex-col lg:flex-row items-center justify-center gap-5">
                 {/* TODO: make sure that this is user input optimized and not hardcoded after full implementation */}
                 <div>
                     <BannerCard title="Advanced" desc="UP TO 60% OFF" cover="./images/hero/camera1-1.png" />
@@ -145,7 +145,7 @@ const BannerCard = ({ title, desc, cover, className, classSecond }) => {
         <>
             <div className=" w-full h-full relative ">
                 <img src={cover} alt="" />
-                <div className={`${className ? " absolute bottom-0 p-8 w-full" : "flex absolute bottom-0 p-8 w-full"} ${className && classSecond ? "left-0 lg:left-48 top:0 w-96" : ""}`}>
+                <div className={`${className ? "bg-[rgba(255,255,255,0.5)] absolute bottom-0 p-8 w-full" : "bg-[rgba(255,255,255,0.5)] flex absolute bottom-0 p-8 w-full"} ${className && classSecond ? "left-0 lg:left-48 top:0 w-96" : ""}`}>
                     <div>
                         <Title level={2}>{title}</Title>
                         <p className="text-lg font-normal leading-none">{desc}</p>

@@ -97,6 +97,7 @@ export const ProductSlideCard = () => {
                         featured={product.featured}
                         category={product.category}
                         color={product.color}
+                        enableQuickView={false}
                     />;
                 })}
             </Slider>

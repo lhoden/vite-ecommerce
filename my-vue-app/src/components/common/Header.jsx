@@ -43,20 +43,20 @@ export const Header = () => {
 
     return (
         <>
-            <header className={isHomePage ? `header px-12 py-3 bg-white-100 relative z-20 ${isScrolled ? "scrolled" : ""}` : `header px-12 py-3 relative z-20 ${isScrolled ? "scrolled" : ""}`}>
+            <header className={isHomePage ? `header px-12 py-3 bg-white-100 relative z-20 ${isScrolled ? "scrolled" : ""}` : `header px-12 py-3 bg-white-100 relative z-20 scrolled`}>
                 {isHomePage && (
                     <div className={`${isScrolled ? "lg:bg-none" : "lg:bg-black"} lg:h-[88px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}></div>
                 )}
                 <nav className="p-4 flex justify-between items-center relative">
                     <div className="flex items-center gap-14">
-                        <div style={{display: 'flex', marginBottom: '-1em'}}>
+                        <a style={{display: 'flex', marginBottom: '-1em'}} href={`/`}>
                             <img src={LogoImg} alt="LogoImg" className="h-12" />
                             <h3 style={{marginTop: '1em', marginLeft: '0.5em', fontWeight: 'bold'}}>CameraShop</h3>
-                        </div>
+                        </a>
                         <div className="hidden lg:flex items-center justify-between gap-8">
                             {menulists.map((list) => (
                                 <li key={list.id} className="uppercase list-none">
-                                    <CustomNavLink href={list.path} className={`${isScrolled || isHomePage ? "text-primary" : "text-white"}`}>{list.link}</CustomNavLink>
+                                    <CustomNavLink href={list.path} className={`${isScrolled || isHomePage ? "text-primary" : "text-primary"}`}>{list.link}</CustomNavLink>
                                 </li>
                             ))}
                         </div>

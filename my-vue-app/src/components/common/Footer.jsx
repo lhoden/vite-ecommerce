@@ -1,4 +1,4 @@
-import LogoImg from '../../assets/common/logo.png';
+import LogoImg from '../../assets/common/camera-logo.png';
 import { BodyOne, Caption, Title } from './CustomComponents';
 import React from 'react';
 import { CustomLink } from './CustomComponents';
@@ -9,7 +9,7 @@ export const Footer = () => {
             <footer className="py-14">
                 <div className="container grid-cols-1 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
-                        <img src={LogoImg} alt="LogoImg" className="h-7" />
+                        <img src={LogoImg} alt="LogoImg" className="h-12" />
                         <div className="flex flex-col gap-2 mt-5">
                             <Caption>Address : 451 Wall Street, UK, London</Caption>
                             <Caption>Email: example@domain.com</Caption>
