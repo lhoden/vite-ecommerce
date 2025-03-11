@@ -12,7 +12,7 @@ export const Product = () => {
                     {/* TODO: make sure to make this dynamically editable via the data after the site has been implemented fully */}
                     <div className="flex items-center gap-3 uppercase">
                         <BodyOne className="text-sm">All products (39)</BodyOne>
-                        <BodyOne className="text-sm text-primary-green">Wooden Products (15)</BodyOne>
+                        <BodyOne className="text-sm text-primary-green">Camera Products (15)</BodyOne>
                     </div>
                     <div className="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
                         {productlists.map((product) => (

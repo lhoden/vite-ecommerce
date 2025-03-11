@@ -163,7 +163,7 @@ export const ProductDetails = () => {
                             <br/>
                             <label htmlFor="">
                                 {/* Also make this dynamic */}
-                                <span className="text-primary font-bold">Category: </span>Wood
+                                <span className="text-primary font-bold">Category: </span>Photography
                             </label>
                         </div>
                     </div>
