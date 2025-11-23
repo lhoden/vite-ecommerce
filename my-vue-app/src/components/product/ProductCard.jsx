@@ -4,10 +4,9 @@ import { IoMdHeart } from 'react-icons/io';
 import { FaRegStar, FaStar, FaStarHalfAlt, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BodyOne, Title } from '../common/CustomComponents';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-// import { FaFacebookF, AiFillInstagram, FaTwitter } from '@fortawesome/free-solid-svg-icons';
 import { CartActions } from '../../redux/slice/cartSlice';
 import { FavoriteActions } from '../../redux/slice/favouriteSlice';
 
@@ -40,16 +39,18 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
     };
     const discountPrice = price[0].value - (price[0].value * discount) / 100;
     const addToCart = () => {
-        dispatch(CartActions.addToCart({id,title,price:discountPrice,images}));
+        dispatch(CartActions.addToCart({id,title,price:discountPrice,quantity: 1,images}));
     }
     const addToFavorites = () => {
-        dispatch(FavoriteActions.addToFavorites({id,title,price:discountPrice,images}));
+        dispatch(FavoriteActions.addToFavorites({id,title,price:discountPrice,quantity: 1,images}));
     }
     return (
         <>
             <div className="product card">
                 <div className="images h-96">
-                    <img src={images[0].image}></img>
+                    <NavLink to={`/product-details/${id}`}>
+                        <img src={images[0].image}></img>
+                    </NavLink>
                     <div className="flex justify-between w-full p-5 absolute top-0 left-0">
                         {discount && <button className="discount-btn">{discount}%</button>}
                         {featured && (
@@ -129,7 +130,7 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
                                     <BodyOne className="text-sm leading-6">{description}</BodyOne>
                                     <div className="flex items-center gap-3">
                                         <input type="text" value="1" className="w-12 h-12 text-primary outline-none border-2 border-primary px-4"></input>
-                                        <button className="primary-btn">ADD TO CART</button>
+                                        <button className="primary-btn" onClick={addToCart}>ADD TO CART</button>
                                         <button 
                                             className="close-btn absolute top-0 right-0 w-12 h-12 flex justify-center items-center bg-primary-green text-white"
                                             onClick={closeModal}
@@ -154,9 +155,9 @@ export const ProductCard = ({ id, title, description, images, price, discount, r
                                                 Share : 
                                             </Title>
                                             <div className="flex items-center -mt-1 gap-3">
-                                                <FaFacebookF />
-                                                <AiFillInstagram />
-                                                <FaTwitter />
+                                                <a href="https://www.facebook.com/" target="_blank"><FaFacebookF /></a>
+                                                <a href="https://www.instagram.com/" target="_blank"><AiFillInstagram /></a>
+                                                <a href="https://x.com/" target="_blank"><FaTwitter /></a>
                                             </div>
                                         </div>
                                     </div>

@@ -6,6 +6,7 @@ import { Title, BodyOne } from "../components/common/CustomComponents";
 import { BiPlus, BiMinus } from "react-icons/bi";
 import { IoCloseOutline } from "react-icons/io5";
 import { CartActions } from "../redux/slice/cartSlice";
+import StripeCheckout from "react-stripe-checkout";
 
 export const CartPage = () => {
     const totalQuantity = useSelector(selectTotalQuantity);
@@ -20,6 +21,8 @@ export const CartPage = () => {
         // handlePaymentSuccess();
         dispatch(clearCart());
     }
+
+    console.log('testing this: ', totalQuantity);
 
     return (
         <>
@@ -69,7 +72,7 @@ export const CartPage = () => {
                             <p className="text-lg font-medium text-primary">Cart totals</p>
                             <hr className="my-2 h-[2px] bg-gray-200"></hr>
                             <div className="text-lg font-medium text-primary flex items-center gap-5">
-                                <p className="w-32">Subtotal</p><p className="text-sm font-normal">${totalPrice.toFixed(2)}</p>
+                                <p className="w-32">Subtotal</p><p className="text-sm font-normal">${(totalPrice * totalQuantity).toFixed(2)}</p>
                             </div>
                             <hr className="my-3 h-[2px] bg-gray-200"></hr>
                             <div className="text-lg font-medium text-primary flex items-center gap-5">
@@ -77,14 +80,14 @@ export const CartPage = () => {
                             </div>
                             <hr className="my-3 h-[2px] bg-gray-200"></hr>
                             <div className="text-lg font-medium text-primary flex items-center gap-5">
-                                <p className="w-32">Total</p><p className="text-sm font-normal">${totalPrice.toFixed(2)}</p>
+                                <p className="w-32">Total</p><p className="text-sm font-normal">${(totalPrice * totalQuantity).toFixed(2)}</p>
                             </div>
                             <StripeCheckout
                                 token={handleToken}
                                 stripeKey=""
                                 amount={totalPrice * 100}
-                                name="Gorkcoder Ecommerce Website"
-                                email="gorkcoder@gmail.com"
+                                name="Camera Shop Ecommerce"
+                                email="laurenoden97@gmail.com"
                                 description="Payment test using stripe"
                             >
                                 <button className="primary-btn mt-5">Proceed to Checkout</button>
@@ -99,7 +102,7 @@ export const CartPage = () => {
 
 export const CartPageCard = ({id, cover, name, price, quantity, totalPrice}) => {
     const dispatch = useDispatch();
-    const incCartItems = () => {
+    const inCartItems = () => {
         dispatch(CartActions.addToCart({id, name, price}));
     };
     const removeCartItem = () => {
@@ -124,7 +127,7 @@ export const CartPageCard = ({id, cover, name, price, quantity, totalPrice}) => 
                 </td>
                 <td className="px-6 py-4">
                     <div className="flex items-center gap-3">
-                        <button onClick={incCartItems} className="w-12 h-12 grid place-content-center bg-gray-100 text-primary border border-gray-300">
+                        <button onClick={inCartItems} className="w-12 h-12 grid place-content-center bg-gray-100 text-primary border border-gray-300">
                             <BiPlus size={20} />
                         </button>
                         <input type="text" value={quantity} readOnly className="w-16 h-12 text-primary outline-none border border-gray-300 px-6"></input>

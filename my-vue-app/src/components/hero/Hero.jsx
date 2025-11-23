@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 function SampleNextArrow(props) {
     const { onClick } = props;
@@ -110,8 +111,8 @@ export const HeroItem = ({ title, description, prices, colors, image }) => {
                         </div>
                     </div>
                     <div className="flex items-center gap-8">
-                        <button className="primary-btn uppercase">view details</button>
-                        <button className="secondary-btn uppercase">view shop</button>
+                        <NavLink to="/coming-soon"><button className="primary-btn uppercase">view details</button></NavLink>
+                        <NavLink to="/shop"><button className="secondary-btn uppercase">view shop</button></NavLink>
                     </div>
                 </div>
                 <div className="right bg-white p-5 w-1/2 h-full flex justify-center items-center relative z-50">
@@ -127,7 +128,6 @@ const Banner = () => {
     return (
         <>
             <div className="py-20 container flex flex-col lg:flex-row items-center justify-center gap-5">
-                {/* TODO: make sure that this is user input optimized and not hardcoded after full implementation */}
                 <div>
                     <BannerCard title="Advanced" desc="UP TO 60% OFF" cover="./images/hero/camera1-1.png" />
                 </div>
@@ -147,11 +147,11 @@ const BannerCard = ({ title, desc, cover, className, classSecond }) => {
                 <img src={cover} alt="" />
                 <div className={`${className ? "bg-[rgba(255,255,255,0.5)] absolute bottom-0 p-8 w-full" : "bg-[rgba(255,255,255,0.5)] flex absolute bottom-0 p-8 w-full"} ${className && classSecond ? "left-0 lg:left-48 top:0 w-96" : ""}`}>
                     <div>
-                        <Title level={2}>{title}</Title>
+                        <Title level={2} className="mr-5">{title}</Title>
                         <p className="text-lg font-normal leading-none">{desc}</p>
                     </div>
                     <div className="w-1/2 mt-5">
-                        <button className="secondary-btn flex justify-end">shop now</button>
+                        <NavLink to="/shop"><button className="secondary-btn flex justify-end">shop now</button></NavLink>
                     </div>
                 </div>
             </div>

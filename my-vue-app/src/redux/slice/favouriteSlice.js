@@ -16,7 +16,7 @@ const favoriteSlice = createSlice({
                 state.favoritesItemList.push({
                     id: newItem.id,
                     price: newItem.price,
-                    quantity: 1,
+                    quantity: newItem.quantity,
                     totalPrice: newItem.price,
                     name: newItem.title,
                     cover: newItem.images

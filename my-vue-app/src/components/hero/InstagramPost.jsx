@@ -11,25 +11,25 @@ const filterDiscoverItems = [
         id: 1,
         title: "Filter & Discover",
         icon: <IoIosColorFilter size={70} />,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        description: "Use our search bar to filter different products and accessories.",
     },
     {
         id: 2,
         title: "Add To Cart", 
         icon: <IoBagRemoveOutline size={70} />,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        description: "Add to cart with a the click of a button.",
     },
     {
         id: 3,
         title: "Fast Shipping",
         icon: <MdOutlineLocalShipping size={70} />,
-        description: "Loreum Ipsum is simply dummy text of the printing and typesetting",
+        description: "Shipping is fast and free for all orders.",
     },
     {
         id: 4,
         title: "Enjoy the Product",
         icon: <FiBox size={70} />,
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+        description: "Enjoyed your product after it arrived? Please leave a review.",
     },
 ];
 

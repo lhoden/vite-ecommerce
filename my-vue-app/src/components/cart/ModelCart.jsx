@@ -18,6 +18,8 @@ export const ModelCart = () => {
     const totalPrice = useSelector(selectTotalPrice);
     const totalFavorite = useSelector(selectTotalFavorites);
     const favItems = useSelector((state) => state.favorites.favoritesItemList);
+
+    console.log('what is this: ', totalQuantity, totalPrice);
     
     const [isOpen, setIsOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
@@ -103,9 +105,10 @@ export const ModelCart = () => {
                                     <div className="checkout">
                                         <CheckoutForm total={totalPrice} handlePaymentSuccess={handlePaymentSuccess} />
                                     </div>
-                                    <NavLink to="/cart">
+                                    {/* Temporarily disabiling this feature to change view */}
+                                    {/* <NavLink to="/cart">
                                         <button className="primary-btn w-full">View Cart</button>
-                                    </NavLink>
+                                    </NavLink> */}
                                 </>
                             ) : (
                                 <>

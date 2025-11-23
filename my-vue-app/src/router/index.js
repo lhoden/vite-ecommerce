@@ -3,6 +3,7 @@ export { ProductSlide } from "../components/product/ProductSlide";
 export { Testimonials } from "../components/hero/Testimonials";
 export { Home } from "../screen/home/Home";
 export { Shop } from "../screen/shop/Shop";
+export { ComingSoon } from "../screen/home/ComingSoon";
 export { Hero } from "../components/hero/Hero";
 export { Product } from "../screen/product/Product";
 export { ShippingInfo } from "../components/product/ShippingInfo";

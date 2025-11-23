@@ -1,6 +1,7 @@
 import React from 'react';
 import { promotionalInfo } from '../../assets/data/data';
 import { Title, BodyOne } from '../common/CustomComponents';
+import { NavLink } from 'react-router-dom';
 
 export const Banner = () => {
     return (
@@ -21,7 +22,7 @@ export const Banner = () => {
                                 {info.title}
                             </Title>
                             <BodyOne>{info.title}</BodyOne>
-                            <button className="secondary-button">Shop Now</button>
+                            <NavLink to="/shop"><button className="secondary-button">Shop Now</button></NavLink>    
                         </div>
                     </div>;
             })}

@@ -28,9 +28,13 @@ import { ProductSlideCard } from "../../components/product/ProductSlide";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CartActions } from "../../redux/slice/cartSlice";
+import { useDispatch } from "react-redux";
+import { FavoriteActions } from "../../redux/slice/favouriteSlice";
 
 export const ProductDetails = () => {
     const { productId } = useParams();
+    const dispatch = useDispatch();
     console.log('uhhh: ', productId);
     const product = productlists.find(
         product => product.id === parseInt(productId)
@@ -42,12 +46,23 @@ export const ProductDetails = () => {
 
     const [selectedColor, setSelectedColor] = useState(color[0].value);
     const [selectedPrice, setSelectedPrice] = useState(price.find((price) => price.color === color[0].value));
+    const [quantity, setQuantity] = useState(1);
     
     const handleColorClick = color => {
         const newSelectedPrice = price.find((price) => price.color === color);
         setSelectedColor(color);
         setSelectedPrice(newSelectedPrice);
     } 
+
+    const handleAdd = () => {
+        setQuantity(quantity + 1);
+    }
+
+    const handleSubtract = () => {
+        if (quantity >= 2) {
+            setQuantity(quantity - 1);
+        }
+    }
 
 
     if (!product) {
@@ -71,6 +86,15 @@ export const ProductDetails = () => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+
+    const discountPrice = selectedPrice.value - (selectedPrice.value * discount) / 100;
+
+    const addToCart = () => {
+        dispatch(CartActions.addToCart({productId,title,price: discountPrice, quantity: quantity, images}));
+    }
+    const addToFavorites = () => {
+        dispatch(FavoriteActions.addToFavorites({productId,title,price: discountPrice, quantity: quantity, images}));
+    }
 
     return (
         <div>
@@ -131,28 +155,25 @@ export const ProductDetails = () => {
                             </div>
                             <br/>
                             <div className="flex items-center gap-3">
-                                <button className="w-12 h-12 grid place-items-center bg-gray-100 text-primary border border-gray-300">
-                                    <BiPlus size={20} />
+                                <button className="w-12 h-12 grid place-items-center bg-gray-100 text-primary border border-gray-300" onClick={handleSubtract}>
+                                    <BiMinus size={20} />
                                 </button>
                                 <input 
                                     type="text"
-                                    value="1"
+                                    value={quantity}
                                     className="w-16 h-12 text-primary outline-none border border-gray-300 px-6"
                                 ></input>
-                                <button className="w-12 h-12 grid place-items-center bg-gray-100 text-primary border border-gray-300">
-                                    <BiMinus size={20} />
+                                <button className="w-12 h-12 grid place-items-center bg-gray-100 text-primary border border-gray-300" onClick={handleAdd}>
+                                    <BiPlus size={20} />
                                 </button>
-                                <button className="primary-btn">
+                                <button className="primary-btn" onClick={addToCart}>
                                     ADD TO CART
                                 </button>
                             </div>
                             <div className="flex items-center gap-3 mt-6">
-                                <button className="flex items-center gap-2 secondary-btn">
+                                <button className="flex items-center gap-2 secondary-btn" onClick={addToFavorites}>
                                     <BiHeart size={20} />
                                     Add to Wishlist
-                                </button>
-                                <button className="flex items-center gap-2 secondary-btn">
-                                    Compare
                                 </button>
                             </div>
                             <hr className="my-5" />

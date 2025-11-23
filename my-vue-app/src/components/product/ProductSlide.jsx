@@ -44,7 +44,7 @@ export const ProductSlide = () => {
                     <Title level={4}>What is trending now</Title>
                     <div className="flex items-center gap-3 uppercase">
                         <BodyOne className="text-sm">
-                            DISCOVER THE MOST TRENDING PRODUCTS IN MOONCART.
+                            DISCOVER THE MOST TRENDING PRODUCTS.
                         </BodyOne>
                     </div>
                 </div>

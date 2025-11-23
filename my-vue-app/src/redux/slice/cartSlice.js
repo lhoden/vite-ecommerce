@@ -18,8 +18,8 @@ const cartSlice = createSlice({
                 state.itemList.push({
                     id: newItem.id,
                     price: newItem.price,
-                    quantity: 1,
-                    totalPrice: newItem.price,
+                    quantity: newItem.quantity,
+                    totalPrice: newItem.price * newItem.quantity,
                     name: newItem.name,
                     cover: newItem.images,
                 });
@@ -60,7 +60,7 @@ export const { clearCart } = cartSlice.actions;
 
 export const selectTotalQuantity = createSelector(
     (state) => state.cart.itemList,
-    (itemList) => itemList.reduce((acc) => acc+1,0)
+    (itemList) => itemList.reduce((acc, item) => acc + 1, 0)
 );
 export const selectTotalPrice = createSelector(
     (state) => state.cart.itemList,

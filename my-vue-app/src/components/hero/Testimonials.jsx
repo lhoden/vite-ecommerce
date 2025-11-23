@@ -57,15 +57,15 @@ export const Testimonials = () => {
                             />
                         </div>
                         <div className="bg-[rgba(255,255,255,0.5)] px-5 backdrop-blur-sm p-3 rounded-lg absolute top-36 right-60 z-50">
-                            <BodyOne className="leading-none">People Who Buy Stuff Here</BodyOne>
+                            <BodyOne className="leading-none">Camera Shop Reviewers</BodyOne>
                             <div className="flex items-center">
                                 <img 
-                                    src="../images/testimonial/pic1-2.png"
+                                    src="../images/testimonial/headshot1.jpg"
                                     alt=""
                                     className="w-14 h-14 object-cover rounded-full border-2 border-gray-100"
                                 />
                                 <img 
-                                    src="../images/testimonial/pic2-2.png"
+                                    src="../images/testimonial/headshot2.jpg"
                                     alt=""
                                     className="-ml-4 w-14 h-14 object-cover rounded-full border-2 border-gray-100"
                                 />
@@ -78,20 +78,20 @@ export const Testimonials = () => {
                     <div className="left w-1/2 relative z-50">
                         <Title level={2}>What our clients say about us</Title>
                         <BodyOne className="mb-8">
-                            It is a long established fact that a reader will be distracted by
-                            the readable content of a page when looking at its layout. The
-                            point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution of letters...
+                            Here are a few samples of product reviews or
+                            descriptions provided by previous clients of ours. 
+                            Camera Shop is a trusted exporter of quality cameras
+                            and many of our customers come back to give feedback.
                         </BodyOne>
                         <Slider {...settings} >
                             <TestimonialsCard 
-                                name="Dude Guy"
-                                post="No job"
-                                cover="../images/testimonial/pic5.jpg"
+                                name="Nancy Matthews"
+                                post="Photographer"
+                                cover="../images/testimonial/headshot3.jpg"
                             />
                             <TestimonialsCard 
-                                name="Guy Dude"
-                                post="A job he has"
+                                name="Steven Bordain"
+                                post="Small Films Director"
                                 cover="../images/testimonial/pic6.jpg"
                             />
                         </Slider>

@@ -22,7 +22,7 @@ export const Home = () => {
 
             <div className="container my-16 slideproduct">
                 <Title level={3}>Recent Product</Title>
-                <Caption>DISCOVER THE MOST TRENDING PRODUCTS IN MOONCART</Caption>
+                <Caption>DISCOVER THE MOST TRENDING PRODUCTS.</Caption>
                 <br/>
                 <ProductSlideCard />
             </div>

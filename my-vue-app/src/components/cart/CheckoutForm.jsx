@@ -17,8 +17,8 @@ export const CheckoutForm = ({ total, handlePaymentSuccess }) => {
                 token={handleToken}
                 stripeKey=""
                 amount={total * 100}
-                name="Gorkcoder Ecommerce Website"
-                email="gorkcoder@gmail.com"
+                name="Camera Shop Ecommerce"
+                email="laurenoden97@gmail.com"
                 description="Payment test using stripe"
             >
                 <button className="w-full bg-gray-200 py-3.5 my-3 font-medium">

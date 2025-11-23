@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Layout, Home, Shop, ProductDetails, CartPage } from "./router";
+import { Layout, Home, Shop, ProductDetails, CartPage, ComingSoon } from "./router";
 
 export const App = () => {
     return (
@@ -42,6 +42,16 @@ export const App = () => {
                         element = {
                             <Layout>
                                 <CartPage />
+                            </Layout>
+                        }
+                    />
+                </Routes>
+                <Routes>
+                    <Route
+                        path="/coming-soon"
+                        element = {
+                            <Layout>
+                                <ComingSoon/>
                             </Layout>
                         }
                     />
