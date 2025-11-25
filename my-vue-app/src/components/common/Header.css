@@ -7,3 +7,17 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
+
+@media screen and (max-width: 550px) {
+    h3 {
+        display: none;
+    }
+    .main-logo {
+        position: absolute !important;
+        top: 1em !important;
+        left: 0em !important;
+    }
+    .search-icon {
+        display: none !important;
+    }
+}

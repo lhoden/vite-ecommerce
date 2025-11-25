@@ -2,6 +2,7 @@ import React from 'react';
 import { promotionalInfo } from '../../assets/data/data';
 import { Title, BodyOne } from '../common/CustomComponents';
 import { NavLink } from 'react-router-dom';
+import './Banner.css';
 
 export const Banner = () => {
     return (
@@ -21,7 +22,7 @@ export const Banner = () => {
                             <Title level={2} className="my-5">
                                 {info.title}
                             </Title>
-                            <BodyOne>{info.title}</BodyOne>
+                            <BodyOne className="confused">{info.title}</BodyOne>
                             <NavLink to="/shop"><button className="secondary-button">Shop Now</button></NavLink>    
                         </div>
                     </div>;

@@ -1,0 +1,11 @@
+@media screen and (max-width: 550px) {
+    /* h2 {
+        display: none !important;
+    } */
+    .confused {
+        display: none !important;
+    }
+    .secondary-button {
+        margin-top: 10em !important;
+    }
+}

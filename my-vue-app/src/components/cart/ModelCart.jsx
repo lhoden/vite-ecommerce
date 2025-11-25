@@ -11,6 +11,7 @@ import { NavLink } from 'react-router-dom';
 import { CheckoutForm } from './CheckoutForm';
 import { FavoriteActions, selectTotalFavorites } from '../../redux/slice/favouriteSlice';
 import PropTypes from "prop-types";
+import './ModelCart.css';
 
 export const ModelCart = () => {
     const totalQuantity = useSelector(selectTotalQuantity);
@@ -69,7 +70,7 @@ export const ModelCart = () => {
                     <div className="cartoverlay" onClick={closeModel}></div>
                     <div 
                         className={`cartmodel p-16 text-primary ${isClosing ? "closing" : ""}`}>
-                            <div className="flex justify-between gap-5">
+                            <div className="cart-wish flex justify-between gap-5">
                                 <button className={`flex items-center gap-2 font-medium ${activeTab === "cart" ? "text-primary" : ""}`} onClick={() => handleTabChange("cart")}>
                                     Shopping Cart 
                                     <span className="w-7 h-7 text-[11px] font-normal rounded-full text-white grid place-content-center bg-primary">
@@ -146,7 +147,7 @@ export const CartProduct = ({id, cover, name, price, quantity}) => {
     return (
         <>
             <div className="mt-5 border-b-2 border-gray-200 pb-5">
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5 image-container">
                     <div className="images w-20 h-20">
                         {cover?.slice(0, 1).map((images, i) => (
                             <img 

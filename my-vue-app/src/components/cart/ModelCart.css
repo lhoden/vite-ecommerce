@@ -1,0 +1,23 @@
+@media screen and (max-width: 550px) {
+    .cartmodel {
+        padding-right: 10em !important;
+    }
+    .cartmodel .w-7 {
+        width: 3rem !important;
+    }
+    .cart-wish {
+        display: block !important;
+    }
+    .cart-wish button {
+        margin-bottom: 1em !important;
+    }
+    .image-container {
+        display: block !important;
+    }
+    .text-primary-green {
+        display: flex !important;
+    }
+    .checkout span {
+        background-color: grey !important;
+    }
+}

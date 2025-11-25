@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import './Hero.css';
 
 function SampleNextArrow(props) {
     const { onClick } = props;
@@ -50,7 +51,7 @@ export const Hero = () => {
     return (
         <div>
             {/* MARGIN TOP of 20 here is what this used to be */}
-            <section className="h-[50vh] lg:h-[90vh] mt-0 bg-white-100 relative z-1">
+            <section className="h-[50vh] lg:h-[90vh] mt-0 bg-white-100 relative z-1 hero-items">
                 <Slider {...settings}>
                     {herolist.map((item) => (
                         <HeroItem 
@@ -84,7 +85,7 @@ export const HeroItem = ({ title, description, prices, colors, image }) => {
                 <div className="left w-1/2 p-8 lg:p-32 lg:py-64">
                     <Title
                         level={1}
-                        className="leading-none font-medium md:text-3xl lg:text-[70px] lg:leading-snug"
+                        className="leading-none font-medium md:text-3xl lg:text-[70px] lg:leading-snug top-section-header"
                     >
                         {title}
                     </Title>
@@ -110,8 +111,8 @@ export const HeroItem = ({ title, description, prices, colors, image }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center gap-8">
-                        <NavLink to="/coming-soon"><button className="primary-btn uppercase">view details</button></NavLink>
+                    <div className="flex items-center gap-8 top-section-buttons">
+                        <NavLink to="/coming-soon"><button className="primary-btn uppercase hero-button">view details</button></NavLink>
                         <NavLink to="/shop"><button className="secondary-btn uppercase">view shop</button></NavLink>
                     </div>
                 </div>
@@ -133,7 +134,7 @@ const Banner = () => {
                 </div>
                 <div className="flex justify-between flex-col gap-8">
                     <BannerCard title="Lenses" desc="UP TO 60% OFF" cover="./images/hero/camera2.png" className={true} />
-                    <BannerCard title="EOS Camera" desc="UP TO 60% OFF" cover="./images/hero/camera3.png" className={true} classSecond={true} />
+                    <BannerCard id="last-banner" title="EOS Camera" desc="UP TO 60% OFF" cover="./images/hero/camera3.png" className={true} classSecond={true} />
                 </div>
             </div>
         </>

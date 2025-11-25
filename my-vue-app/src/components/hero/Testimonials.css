@@ -1,0 +1,11 @@
+@media screen and (max-width: 550px) {
+    .camera-preview {
+        display: none !important;
+    }
+    .testimonial-description {
+        width: 90% !important;
+    }
+    .slider-btn {
+        display: none !important;
+    }   
+}

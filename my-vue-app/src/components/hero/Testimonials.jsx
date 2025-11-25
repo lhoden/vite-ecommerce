@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
+import './Testimonials.css';
 
 
 function SampleNextArrow(props) {
@@ -47,7 +48,7 @@ export const Testimonials = () => {
         <>
             <section className="testimonials">
                 <div className="container h-full flex items-center justify-center">
-                    <div className="w-1/2 flex relative z-50">
+                    <div className="w-1/2 flex relative z-50 camera-preview">
                         <div className="box w-96 h-96 bg-white rounded-full z-50">
                             {/* TODO: make this dynamic and import from data so the user can choose this as well */}
                             <img 
@@ -75,7 +76,7 @@ export const Testimonials = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="left w-1/2 relative z-50">
+                    <div className="left w-1/2 relative z-50 testimonial-description">
                         <Title level={2}>What our clients say about us</Title>
                         <BodyOne className="mb-8">
                             Here are a few samples of product reviews or

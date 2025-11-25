@@ -64,7 +64,7 @@ export const menulists = [
       id: 2,
       title: "Explore 4K Cameras",
       description:
-        "Preview the visual as it's ",
+        "Preview the visual live.",
       image: "../images/hero/4k-cam.jpg",
       price: [
         {

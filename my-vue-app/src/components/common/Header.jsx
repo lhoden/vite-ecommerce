@@ -50,7 +50,7 @@ export const Header = () => {
                 <nav className="p-4 flex justify-between items-center relative">
                     <div className="flex items-center gap-14">
                         <a style={{display: 'flex', marginBottom: '-1em'}} href={`/`}>
-                            <img src={LogoImg} alt="LogoImg" className="h-12" />
+                            <img src={LogoImg} alt="LogoImg" className="h-12 main-logo" />
                             <h3 style={{marginTop: '1em', marginLeft: '0.5em', fontWeight: 'bold'}}>CameraShop</h3>
                         </a>
                         <div className="hidden lg:flex items-center justify-between gap-8">
@@ -68,7 +68,7 @@ export const Header = () => {
                             <CustomLink className={`${isScrolled || isHomePage ? "text-white" : "text-primary"}`}>Register</CustomLink>
                         </div>
                         <div className={`${isScrolled || isHomePage ? "text-white" : "text-primary"} icon flex items-center justify-center gap-6`}>
-                            <IoSearchOutline size={23} />
+                            <IoSearchOutline className="search-icon" size={23} />
                             <ModelCart />
                             <button onClick={toggleMenu} className="lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none">
                                 {isOpen ? (
