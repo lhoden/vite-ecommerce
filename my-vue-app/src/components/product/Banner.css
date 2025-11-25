@@ -6,6 +6,6 @@
         display: none !important;
     }
     .secondary-button {
-        margin-top: 10em !important;
+        display: none !important;
     }
 }

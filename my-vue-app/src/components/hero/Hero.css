@@ -1,15 +1,13 @@
 @media screen and (max-width: 550px) {
     .top-section-header {
         font-size: 2em !important;
-        margin-bottom: 1.8em !important;
+        margin-bottom: 2.8em !important;
     }
     .top-section-buttons {
         display: block !important;
     }
     .hero-button {
-        margin-bottom: 1.5em !important;
-        /* font-size: 12px !important;
-        line-height: 15px !important; */
+        display: none !important;
     }
     .bottom-0 h2 {
         font-size: 1em !important;
